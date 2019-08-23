@@ -23,9 +23,9 @@ $ docker build --tag=tweet_flask .
 $ docker run -p  12345:12345 tweet_flask
 ```
 
-Step 04: copy the address http://0.0.0.0:12345/ and paste it in your browser
+**Step 04: copy the address http://0.0.0.0:12345/ and paste it in your browser**
 
-Step 05: enter your tweet, click on predict, get the result, go back and reset tweet to enter another one
+**Step 05: enter your tweet, click on predict, get the result, go back and reset tweet to enter another one**
 
 Enjoy! :)
 
