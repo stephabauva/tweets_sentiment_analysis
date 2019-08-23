@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+
+		</div>
+		<h2>Classifier for tweets</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Tweet</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 0%}
+	<h2 style="color:red;">Result = 0: your tweet is hateful - fuck you</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:blue;">Result = 1: your tweet is offensive - get a life you jerk</h2>
+	{% elif prediction == 2%}
+	<h2 style="color:blue;">Result = 2: your tweet is neither hateful nor offensive... but i'm watching you!</h2>
+	{% endif %}
+
+	</div>
+
+<!-- 	<div class="ml-container">
+	<form action="{{ url_for('index')}}" method="POST"></form>
+	<input type="submit" class="btn-info" value="back to home">
+	</div> -->
+	<form>
+ 	<input type="button" value="Go back!" onclick="history.back()">
+	</form>
+
+
+
+</body>
+</html>
