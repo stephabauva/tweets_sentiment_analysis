@@ -10,7 +10,6 @@ nltk.download('punkt'); nltk.download('averaged_perceptron_tagger');nltk.downloa
    
 from nltk.stem import WordNetLemmatizer    
     
-from sklearn.utils import resample
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
@@ -58,7 +57,6 @@ pipeline_randomF = Pipeline([
 
 #the model
 model = pipeline_randomF.fit(X_train, y_train)
-# y_pred = model.predict(X_test)
 
 #serializing our model 
 pickle.dump(model, open('RF_tweet_clas.pkl','wb'))

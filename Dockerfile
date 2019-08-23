@@ -1,11 +1,12 @@
 FROM python:3
 
-
-# Set the working directory to /ripo_tweet_flask
+#Set the working directory to /ripo_tweet_flask
 WORKDIR /ripo_tweet_flask
 
-# Copy the current directory contents into the container 
+#Copy the current directory contents into the container 
 COPY . /ripo_tweet_flask
+
+#Add all python files to the WORKDIR
 ADD RF_tweet_clas.py /
 ADD app.py /
 
