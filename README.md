@@ -16,6 +16,7 @@ $ git clone https://github.com/stephanBV/tweets_sentiment_analysis.git
 $ docker build --tag=tweet_flask .          
 $ docker run -p  12345:12345 tweet_flask
 ```
+Executing this last line of code might take a little while as the model is training for the first time. A .pkl is created containing the trained model.
 
 **Step 03: copy the address http://0.0.0.0:12345/ and paste it in your browser**
 
