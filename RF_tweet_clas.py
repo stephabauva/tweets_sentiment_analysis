@@ -1,6 +1,7 @@
 #import dependencies
 import pandas as pd
 import re
+import pickle
 
 import nltk
 nltk.download('stopwords'); from nltk.corpus import stopwords
@@ -16,11 +17,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.ensemble import RandomForestClassifier
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-from sklearn.metrics import confusion_matrix
 
 #import model
 tweets = pd.read_csv("tweet_data.csv")
@@ -57,13 +53,15 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random
 pipeline_randomF = Pipeline([
     ('vect', CountVectorizer(max_features=1500, stop_words=stop)),
     ('tfidf',  TfidfTransformer()),
-    ('nb', RandomForestClassifier(n_estimators=500, random_state=0)),
+    ('nb', RandomForestClassifier(n_estimators=150, random_state=0)),
 ])
 
 #the model
 model = pipeline_randomF.fit(X_train, y_train)
 # y_pred = model.predict(X_test)
 
-#serializing our model to a file called model.pkl so we don't have to retrain it all the time
-from sklearn.externals import joblib
-joblib.dump(model, 'RF_tweet_clas.pkl')
+#serializing our model 
+pickle.dump(model, open('RF_tweet_clas.pkl','wb'))
+
+
+

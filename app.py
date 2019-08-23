@@ -1,32 +1,9 @@
 from flask import Flask, render_template, url_for, request
 import pickle
-from sklearn.externals import joblib
-
-# #import dependencies
-# import pandas as pd
-# import re
-
-# import nltk
-# nltk.download('stopwords'); from nltk.corpus import stopwords
-# from nltk.tokenize import sent_tokenize, word_tokenize 
-# nltk.download('punkt'); nltk.download('averaged_perceptron_tagger');nltk.download('wordnet')
-   
-# from nltk.stem import WordNetLemmatizer    
-    
-# from sklearn.utils import resample
-# from sklearn.model_selection import train_test_split
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# from sklearn.pipeline import Pipeline
-# from sklearn.feature_extraction.text import CountVectorizer
-# from sklearn.feature_extraction.text import TfidfTransformer
-# from sklearn.ensemble import RandomForestClassifier
-
-# import seaborn as sns
-# import matplotlib.pyplot as plt
-
-# from sklearn.metrics import confusion_matrix
+#from sklearn.externals import joblib
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -35,9 +12,7 @@ def index():
 @app.route('/predict',methods=['POST'])
 def predict():
 	#deserialisation
-	#create the .pkl file (already provided in repository)
-	RF_tweet_clas = open('RF_tweet_clas.pkl','rb')
-	model = joblib.load(RF_tweet_clas)
+	model = pickle.load(open('RF_tweet_clas.pkl','rb'))
 
 	if request.method == 'POST':
 		message = request.form['message']
