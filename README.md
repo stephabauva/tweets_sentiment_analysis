@@ -2,11 +2,11 @@
 
 This repository provides the necessary files to run an Flask application allowing the user to enter a tweet and classify it.
 
-0 - hate speech 
+0 = hate speech 
 
-1 - offensive  language 
+1 = offensive  language 
 
-2 - neither
+2 = neither
 
 **Step 01: clone this repository on your machine**
 ```bash
