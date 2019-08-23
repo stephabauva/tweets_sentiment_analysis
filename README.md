@@ -15,7 +15,7 @@ $ git clone https://github.com/stephanBV/tweets_sentiment_analysis_app.git
 ```
 **Step 02: navigate in the project folder ("tweets_sentiment_analysis") and create the .pkl file that will contain the trained model. In your terminal, paste the following command:**
 ```bash
-$ python3 app.py
+$ python3 RF_tweet_clas.py
 ```
 A .pkl has just been created.
 
