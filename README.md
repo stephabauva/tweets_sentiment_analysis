@@ -9,7 +9,8 @@ This repository provides the necessary files to run an Flask application allowin
 **Step 01: clone this repository on your machine**
 ```bash
 $ git init
-$ git clone https://github.com/stephanBV/twets_sentiment_analysis_app.git
+$ git clone https://github.com/stephanBV/tweets_sentiment_analysis_app.git
+cd tweets_sentiment_analysis
 ```
 
 Step 02: build your docker image (here named "tweet_flask") and run processes in the isolated container. Copy and paste the following command in your terminal: 
