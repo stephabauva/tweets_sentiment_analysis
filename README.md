@@ -11,6 +11,8 @@ This repository provides the necessary files to run a Flask application that cla
 **The result page:** \
 ![](images/result.png)
 
+If you do not have Docker on your machine, go to https://docs.docker.com/install/ and install it. Once done, follow those next steps.
+
 **Step 01: clone this repository on your machine**
 ```bash
 $ git init
