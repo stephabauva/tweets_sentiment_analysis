@@ -1,4 +1,4 @@
-*Tweets sentiment analysis with Flask and Docker*
+**Tweets sentiment analysis with Flask and Docker**
 
 This repository provides the necessary files to run a Flask application that classify tweets into 3 labels: \
 0 - hate speech \
