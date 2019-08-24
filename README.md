@@ -5,10 +5,10 @@ This repository provides the necessary files to run a Flask application that cla
 1 - offensive  language \
 2 - neither hateful nor offensive \
 
-The home page: \
+**The home page:** \
 ![](images/home.png) 
 
-The result page: \
+**The result page:** \
 ![](images/result.png)
 
 **Step 01: clone this repository on your machine**
