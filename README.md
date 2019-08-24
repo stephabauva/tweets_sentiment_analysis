@@ -13,7 +13,7 @@ This repository provides the necessary files to run a Flask application that cla
 
 If you do not have Docker on your machine, go to https://docs.docker.com/install/ and install it. Once done, follow those next steps.
 
-**Step 01: clone this repository on your machine**
+**Step 01: in your project folder, clone this repository on your machine**
 ```bash
 $ git init
 $ git clone https://github.com/stephanBV/tweets_sentiment_analysis.git
