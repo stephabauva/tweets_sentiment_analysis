@@ -3,7 +3,7 @@
 This repository provides the necessary files to run a Flask application that classify tweets into 3 labels:
 0 - hate speech \
 1 - offensive  language \
-2 - neither
+2 - neither hateful nor offensive
 
 **Step 01: clone this repository on your machine**
 ```bash
@@ -15,9 +15,9 @@ $ git clone https://github.com/stephanBV/tweets_sentiment_analysis.git
 $ docker build --tag=tweet_flask .          
 $ docker run -p  12345:12345 tweet_flask
 ```
-Executing this last line of code might take a little while as the model is training for the first time. A .pkl is created containing the trained model.
+Executing this last line of code might take a moment as the model is training for the first time. A .pkl is created containing the trained model.
 
-**Step 03: copy the address http://0.0.0.0:12345/ and paste it in your browser**
+**Step 03: then, copy the address http://0.0.0.0:12345/ and paste it in your browser**
 
 **Step 04: enter your tweet, click on predict, get the result, go back and reset tweet to enter another one**
 
